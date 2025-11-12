@@ -1,7 +1,8 @@
 <?php 
 // Define base path for assets (relative to project root)
 define('BASE_PATH', '');
-include 'includes/header.php'; 
+include 'includes/header.php';
+include 'includes/image_helper.php';
 ?>
 
 <main>
@@ -57,7 +58,14 @@ include 'includes/header.php';
             <div class="models-grid">
                 <div class="model-card reveal">
                     <div class="model-image">
-                        <img src="assets/images/cars/car1.svg" alt="Hyundai Creta">
+                        <?php 
+                        $cretaImg = getCarImage('creta', 'suv');
+                        $cretaSrcSet = generateSrcSet('creta', 'suv', 'webp');
+                        ?>
+                        <picture>
+                            <source srcset="<?php echo $cretaSrcSet; ?>" type="image/webp" sizes="(max-width: 576px) 400px, (max-width: 992px) 800px, 1200px">
+                            <img src="<?php echo $cretaImg; ?>" alt="Hyundai Creta" loading="lazy" width="1600" height="590">
+                        </picture>
                     </div>
                     <div class="model-info">
                         <h3>Hyundai Creta</h3>
@@ -67,7 +75,14 @@ include 'includes/header.php';
                 </div>
                 <div class="model-card reveal">
                     <div class="model-image">
-                        <img src="assets/images/cars/car2.svg" alt="Hyundai Venue">
+                        <?php 
+                        $venueImg = getCarImage('venue', 'suv');
+                        $venueSrcSet = generateSrcSet('venue', 'suv', 'webp');
+                        ?>
+                        <picture>
+                            <source srcset="<?php echo $venueSrcSet; ?>" type="image/webp" sizes="(max-width: 576px) 400px, (max-width: 992px) 800px, 1200px">
+                            <img src="<?php echo $venueImg; ?>" alt="Hyundai Venue" loading="lazy" width="1600" height="590">
+                        </picture>
                     </div>
                     <div class="model-info">
                         <h3>Hyundai Venue</h3>
@@ -77,7 +92,14 @@ include 'includes/header.php';
                 </div>
                 <div class="model-card reveal">
                     <div class="model-image">
-                        <img src="assets/images/cars/car3.svg" alt="Hyundai i20">
+                        <?php 
+                        $i20Img = getCarImage('i20', 'hatchback');
+                        $i20SrcSet = generateSrcSet('i20', 'hatchback', 'webp');
+                        ?>
+                        <picture>
+                            <source srcset="<?php echo $i20SrcSet; ?>" type="image/webp" sizes="(max-width: 576px) 400px, (max-width: 992px) 800px, 1200px">
+                            <img src="<?php echo $i20Img; ?>" alt="Hyundai i20" loading="lazy" width="1600" height="590">
+                        </picture>
                     </div>
                     <div class="model-info">
                         <h3>Hyundai i20</h3>
@@ -87,7 +109,14 @@ include 'includes/header.php';
                 </div>
                 <div class="model-card reveal">
                     <div class="model-image">
-                        <img src="assets/images/cars/car4.svg" alt="Hyundai Verna">
+                        <?php 
+                        $vernaImg = getCarImage('verna', 'sedan');
+                        $vernaSrcSet = generateSrcSet('verna', 'sedan', 'webp');
+                        ?>
+                        <picture>
+                            <source srcset="<?php echo $vernaSrcSet; ?>" type="image/webp" sizes="(max-width: 576px) 400px, (max-width: 992px) 800px, 1200px">
+                            <img src="<?php echo $vernaImg; ?>" alt="Hyundai Verna" loading="lazy" width="1600" height="590">
+                        </picture>
                     </div>
                     <div class="model-info">
                         <h3>Hyundai Verna</h3>
@@ -97,11 +126,18 @@ include 'includes/header.php';
                 </div>
                 <div class="model-card reveal">
                     <div class="model-image">
-                        <img src="assets/images/cars/car5.svg" alt="Hyundai Tucson">
+                        <?php 
+                        $tucsonImg = getCarImage('alcazar', 'suv');
+                        $tucsonSrcSet = generateSrcSet('alcazar', 'suv', 'webp');
+                        ?>
+                        <picture>
+                            <source srcset="<?php echo $tucsonSrcSet; ?>" type="image/webp" sizes="(max-width: 576px) 400px, (max-width: 992px) 800px, 1200px">
+                            <img src="<?php echo $tucsonImg; ?>" alt="Hyundai Alcazar" loading="lazy" width="1600" height="590">
+                        </picture>
                     </div>
                     <div class="model-info">
-                        <h3>Hyundai Tucson</h3>
-                        <p class="model-price">Starting from ₹27.38 Lakh*</p>
+                        <h3>Hyundai alcazar</h3>
+                        <p class="model-price">Starting from ₹15.99 Lakh*</p>
                         <a href="#" class="btn btn-outline">View Details</a>
                     </div>
                 </div>
@@ -117,21 +153,21 @@ include 'includes/header.php';
             <div class="features-grid">
                 <div class="feature-card reveal">
                     <div class="feature-icon">
-                        <img src="assets/images/icons/service.svg" alt="Innovation">
+                        <img src="<?php echo getFeatureIcon('innovation'); ?>" alt="Innovation">
                     </div>
                     <h3>Innovation</h3>
                     <p>Cutting-edge technology and advanced features that enhance your driving experience and keep you connected on the go.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon">
-                        <img src="assets/images/icons/offer.svg" alt="Safety">
+                        <img src="<?php echo getFeatureIcon('safety'); ?>" alt="Safety">
                     </div>
                     <h3>Safety</h3>
                     <p>Comprehensive safety features and top ratings ensure peace of mind for you and your loved ones on every journey.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon">
-                        <img src="assets/images/icons/contact.svg" alt="Sustainability">
+                        <img src="<?php echo getFeatureIcon('sustainability'); ?>" alt="Sustainability">
                     </div>
                     <h3>Sustainability</h3>
                     <p>Leading the charge towards a greener future with electric and hybrid vehicles that reduce environmental impact.</p>

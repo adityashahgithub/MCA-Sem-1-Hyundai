@@ -1,7 +1,8 @@
 <?php 
 // Define base path for assets (relative to project root)
 define('BASE_PATH', '');
-include 'includes/header.php'; 
+include 'includes/header.php';
+include 'includes/image_helper.php';
 ?>
 
 <main>
@@ -35,7 +36,7 @@ include 'includes/header.php';
                 <!-- SUV Models -->
                 <div class="model-card-page" data-category="suv">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car1.svg" alt="Hyundai Creta">
+                        <img src="<?php echo getCarImage('creta', 'suv'); ?>" alt="Hyundai Creta" loading="lazy" width="1600" height="590">
                         <div class="model-badge">SUV</div>
                     </div>
                     <div class="model-info-page">
@@ -56,7 +57,7 @@ include 'includes/header.php';
 
                 <div class="model-card-page" data-category="suv">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car2.svg" alt="Hyundai Venue">
+                        <img src="<?php echo getCarImage('venue', 'suv'); ?>" alt="Hyundai Venue" loading="lazy" width="1600" height="590">
                         <div class="model-badge">SUV</div>
                     </div>
                     <div class="model-info-page">
@@ -77,7 +78,7 @@ include 'includes/header.php';
 
                 <div class="model-card-page" data-category="suv">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car5.svg" alt="Hyundai Tucson">
+                        <img src="<?php echo getCarImage('tucson', 'suv'); ?>" alt="Hyundai Tucson" loading="lazy" width="1600" height="590">
                         <div class="model-badge">SUV</div>
                     </div>
                     <div class="model-info-page">
@@ -99,7 +100,7 @@ include 'includes/header.php';
                 <!-- Sedan Models -->
                 <div class="model-card-page" data-category="sedan">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car4.svg" alt="Hyundai Verna">
+                        <img src="<?php echo getCarImage('verna', 'sedan'); ?>" alt="Hyundai Verna" loading="lazy" width="1600" height="590">
                         <div class="model-badge">Sedan</div>
                     </div>
                     <div class="model-info-page">
@@ -120,7 +121,7 @@ include 'includes/header.php';
 
                 <div class="model-card-page" data-category="sedan">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car3.svg" alt="Hyundai Aura">
+                        <img src="<?php echo getCarImage('aura', 'sedan'); ?>" alt="Hyundai Aura" loading="lazy" width="1600" height="590">
                         <div class="model-badge">Sedan</div>
                     </div>
                     <div class="model-info-page">
@@ -142,7 +143,7 @@ include 'includes/header.php';
                 <!-- Hatchback Models -->
                 <div class="model-card-page" data-category="hatchback">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car3.svg" alt="Hyundai i20">
+                        <img src="<?php echo getCarImage('i20', 'hatchback'); ?>" alt="Hyundai i20" loading="lazy" width="1600" height="590">
                         <div class="model-badge">Hatchback</div>
                     </div>
                     <div class="model-info-page">
@@ -163,7 +164,7 @@ include 'includes/header.php';
 
                 <div class="model-card-page" data-category="hatchback">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car2.svg" alt="Hyundai Grand i10 Nios">
+                        <img src="<?php echo getCarImage('grand-i10-nios', 'hatchback'); ?>" alt="Hyundai Grand i10 Nios" loading="lazy" width="1600" height="590">
                         <div class="model-badge">Hatchback</div>
                     </div>
                     <div class="model-info-page">
@@ -185,7 +186,7 @@ include 'includes/header.php';
                 <!-- Electric Models -->
                 <div class="model-card-page" data-category="electric">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car1.svg" alt="Hyundai Kona Electric">
+                        <img src="<?php echo getCarImage('kona-electric', 'electric'); ?>" alt="Hyundai Kona Electric" loading="lazy" width="1600" height="590">
                         <div class="model-badge electric-badge">Electric</div>
                     </div>
                     <div class="model-info-page">
@@ -206,7 +207,7 @@ include 'includes/header.php';
 
                 <div class="model-card-page" data-category="electric">
                     <div class="model-image-page">
-                        <img src="<?php echo BASE_PATH; ?>assets/images/cars/car4.svg" alt="Hyundai IONIQ 5">
+                        <img src="<?php echo getCarImage('ioniq-5', 'electric'); ?>" alt="Hyundai IONIQ 5" loading="lazy" width="1600" height="590">
                         <div class="model-badge electric-badge">Electric</div>
                     </div>
                     <div class="model-info-page">
