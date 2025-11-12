@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <!-- Car Body -->
+  <rect x="60" y="110" width="280" height="50" rx="5" fill="#00A5FF"/>
+  <rect x="90" y="85" width="220" height="45" rx="8" fill="#0D4F8B"/>
+  <!-- Windows -->
+  <rect x="110" y="95" width="70" height="25" rx="3" fill="#E5E7EB" opacity="0.7"/>
+  <rect x="210" y="95" width="70" height="25" rx="3" fill="#E5E7EB" opacity="0.7"/>
+  <!-- Wheels -->
+  <circle cx="130" cy="160" r="22" fill="#111827"/>
+  <circle cx="130" cy="160" r="16" fill="#6B7280"/>
+  <circle cx="270" cy="160" r="22" fill="#111827"/>
+  <circle cx="270" cy="160" r="16" fill="#6B7280"/>
+  <!-- Headlights -->
+  <ellipse cx="340" cy="125" rx="12" ry="8" fill="#F4F6F8"/>
+  <!-- Grille -->
+  <rect x="60" y="120" width="25" height="30" rx="3" fill="#111827" opacity="0.5"/>
+</svg>
+
