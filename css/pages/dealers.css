@@ -1,0 +1,111 @@
+/* ============================================
+   HYUNDAI WEBSITE - DEALERS PAGE STYLES
+   ============================================ */
+
+.dealer-search {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.dealer-search .surface-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.dealer-search form {
+    display: grid;
+    gap: 1rem;
+}
+
+.dealer-search form input,
+.dealer-search form select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 2px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.dealer-search form input:focus,
+.dealer-search form select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0, 165, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+.dealer-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.dealer-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.dealer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.dealer-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.dealer-card address {
+    font-style: normal;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.dealer-card .contact-info {
+    display: grid;
+    gap: 0.35rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.dealer-services {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.dealer-services span {
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--light);
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+.map-placeholder {
+    background: linear-gradient(135deg, rgba(13, 79, 139, 0.1) 0%, rgba(0, 165, 255, 0.15) 100%);
+    border-radius: 16px;
+    min-height: 320px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .dealer-card {
+        padding: 1.5rem;
+    }
+}
+

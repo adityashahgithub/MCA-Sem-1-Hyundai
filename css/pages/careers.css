@@ -1,0 +1,123 @@
+/* ============================================
+   HYUNDAI WEBSITE - CAREERS PAGE STYLES
+   ============================================ */
+
+.careers-intro {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.careers-intro p {
+    color: var(--gray);
+    font-size: 1.05rem;
+}
+
+.careers-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.job-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.job-card header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.job-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    color: var(--gray);
+}
+
+.job-card ul li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.job-card ul li::before {
+    content: '•';
+    color: var(--accent);
+}
+
+.values-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.value-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-card h4 {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    color: var(--gray);
+}
+
+.careers-cta {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.careers-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .job-card {
+        padding: 1.75rem;
+    }
+}
+

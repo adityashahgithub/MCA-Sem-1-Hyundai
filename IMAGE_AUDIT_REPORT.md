@@ -26,37 +26,37 @@
 
 ## 📋 Image Source Verification
 
-### index.php - Homepage Car Images
+### index.html - Homepage Car Images
 
 | Model | Image Source | Status | Dimensions |
-|-------|-------------|--------|------------|
-| Creta | `getCarImage('creta', 'suv')` | ✅ Verified | 1600×590 |
-| Venue | `getCarImage('venue', 'suv')` | ✅ Verified | 1600×590 |
-| i20 | `getCarImage('i20', 'hatchback')` | ✅ Verified | 1600×590 |
-| Verna | `getCarImage('verna', 'sedan')` | ✅ Verified | 1600×590 |
-| Alcazar | `getCarImage('alcazar', 'suv')` | ✅ Verified | 1600×590 |
+|-------|--------------|--------|------------|
+| Creta | `assets/images/cars/suv/creta.png` | ✅ Verified | 1600×590 |
+| Venue | `assets/images/cars/suv/venue.png` | ✅ Verified | 1600×590 |
+| i20 | `assets/images/cars/hatchback/i20.png` | ✅ Verified | 1600×590 |
+| Verna | `assets/images/cars/sedan/verna.png` | ✅ Verified | 1600×590 |
+| Alcazar | `assets/images/cars/suv/alcazar.png` | ✅ Verified | 1600×590 |
 
-### models.php - Models Page Car Images
+### models.html - Models Page Car Images
 
 | Model | Image Source | Status | Dimensions |
-|-------|-------------|--------|------------|
-| Creta | `getCarImage('creta', 'suv')` | ✅ Verified | 1600×590 |
-| Venue | `getCarImage('venue', 'suv')` | ✅ Verified | 1600×590 |
-| Tucson | `getCarImage('tucson', 'suv')` | ✅ Verified | Fallback SVG |
-| Verna | `getCarImage('verna', 'sedan')` | ✅ Verified | 1600×590 |
-| Aura | `getCarImage('aura', 'sedan')` | ✅ Verified | Fallback SVG |
-| i20 | `getCarImage('i20', 'hatchback')` | ✅ Verified | 1600×590 |
-| Grand i10 Nios | `getCarImage('grand-i10-nios', 'hatchback')` | ✅ Verified | Fallback SVG |
-| Kona Electric | `getCarImage('kona-electric', 'electric')` | ✅ Verified | Fallback SVG |
-| IONIQ 5 | `getCarImage('ioniq-5', 'electric')` | ✅ Verified | Fallback SVG |
+|-------|--------------|--------|------------|
+| Creta | `assets/images/cars/suv/creta.png` | ✅ Verified | 1600×590 |
+| Venue | `assets/images/cars/suv/venue.png` | ✅ Verified | 1600×590 |
+| Tucson | `assets/images/cars/car5.svg` | ✅ Verified | Fallback SVG |
+| Verna | `assets/images/cars/sedan/verna.png` | ✅ Verified | 1600×590 |
+| Aura | `assets/images/cars/car3.svg` | ✅ Verified | Fallback SVG |
+| i20 | `assets/images/cars/hatchback/i20.png` | ✅ Verified | 1600×590 |
+| Grand i10 Nios | `assets/images/cars/car2.svg` | ✅ Verified | Fallback SVG |
+| Kona Electric | `assets/images/cars/car1.svg` | ✅ Verified | Fallback SVG |
+| IONIQ 5 | `assets/images/cars/car4.svg` | ✅ Verified | Fallback SVG |
 
 ### Feature Icons
 
 | Icon | Source | Status | Size |
 |------|--------|--------|------|
-| Innovation | `getFeatureIcon('innovation')` | ✅ Verified | 40×40px |
-| Safety | `getFeatureIcon('safety')` | ✅ Verified | 40×40px |
-| Sustainability | `getFeatureIcon('sustainability')` | ✅ Verified | 40×40px |
+| Innovation | `assets/images/icons/service.svg` | ✅ Verified | 40×40px |
+| Safety | `assets/images/icons/offer.svg` | ✅ Verified | 40×40px |
+| Sustainability | `assets/images/icons/contact.svg` | ✅ Verified | 40×40px |
 
 ### Logo
 
@@ -110,9 +110,9 @@
    - Improves initial page load performance
    - Images load as user scrolls
 
-3. **Responsive Images**: Using `<picture>` element with srcset
-   - Supports multiple image sizes for different screen sizes
-   - Falls back gracefully if responsive images not available
+3. **Flexible Markup**: `<picture>` wrappers retained for future responsive sources
+   - Currently serves a single `<img>` asset
+   - Allows easy enhancement with `srcset` later
 
 4. **Object Fit**: Using `object-fit: contain`
    - Ensures images fit within container without distortion
@@ -120,14 +120,12 @@
 
 ## 📊 Image Loading Strategy
 
-1. **Helper Functions**: All images use PHP helper functions
-   - Automatically checks for WebP → JPG → PNG → SVG
-   - Falls back to local files if available
-   - Uses external URLs as last resort
+1. **Direct Paths**: All images are referenced directly in HTML
+   - Eliminates dependency on PHP helper utilities
+   - Simplifies hosting on any static server
 
 2. **File Locations**:
-   - Local files: `assets/images/cars/{category}/{model}.png`
-   - External URLs: Hyundai official website (if local not found)
+   - Local files: `assets/images/cars/{category}/{model}.png` or fallback SVGs
 
 ## 🔍 Issues Found & Fixed
 

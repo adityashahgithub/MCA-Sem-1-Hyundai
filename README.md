@@ -1,6 +1,6 @@
 # Hyundai Website - India Market
 
-A modern, responsive website for Hyundai Motor India, built with pure HTML, CSS, JavaScript, and minimal PHP.
+A modern, responsive website for Hyundai Motor India, built with pure HTML, CSS, and JavaScript.
 
 ## 🚀 Project Overview
 
@@ -11,16 +11,56 @@ This project represents an original Hyundai-themed website inspired by the India
 ```
 hyundai_website/
 │
-├── index.php              # Main homepage
+├── index.html             # Main homepage
+├── models.html            # Extended models listing
+├── model-detail.html      # Detailed model showcase
+├── ev.html                # Electric vehicle hub
+├── services.html          # Service & maintenance programs
+├── offers.html            # Seasonal offers & finance options
+├── dealers.html           # Dealer locator
+├── careers.html           # Careers with Hyundai
+├── contact.html           # Dedicated contact center
+├── faqs.html              # Frequently asked questions
+├── news.html              # Newsroom & media
+├── gallery.html           # Visual gallery
+├── about.html             # Brand story
+├── privacy.html           # Privacy policy
+├── 404.html               # Error page
 ├── css/
-│   └── style.css          # Main stylesheet with animations
+│   ├── global.css         # Theme variables, layout, shared components
+│   └── pages/             # Page-specific styles
+│       ├── index.css
+│       ├── models.css
+│       ├── model-detail.css
+│       ├── ev.css
+│       ├── services.css
+│       ├── offers.css
+│       ├── dealers.css
+│       ├── careers.css
+│       ├── contact.css
+│       ├── faqs.css
+│       ├── news.css
+│       ├── gallery.css
+│       ├── about.css
+│       ├── privacy.css
+│       └── error.css
 ├── js/
-│   └── main.js            # JavaScript for interactions
-├── includes/
-│   ├── header.php         # Navigation header
-│   └── footer.php         # Footer with social links
-├── php/
-│   └── form_handler.php   # Form submission handler
+│   ├── global.js          # Shared interactivity & utilities
+│   └── pages/             # Page-specific scripts
+│       ├── index.js
+│       ├── models.js
+│       ├── model-detail.js
+│       ├── ev.js
+│       ├── services.js
+│       ├── offers.js
+│       ├── dealers.js
+│       ├── careers.js
+│       ├── contact.js
+│       ├── faqs.js
+│       ├── news.js
+│       ├── gallery.js
+│       ├── about.js
+│       └── privacy.js
 ├── assets/
 │   ├── logo.svg           # Hyundai logo
 │   ├── favicon.svg        # Site favicon
@@ -28,7 +68,6 @@ hyundai_website/
 │       ├── cars/          # Car model SVGs
 │       ├── backgrounds/   # Background images
 │       └── icons/         # Feature icons
-├── data/                  # Form submissions (auto-created)
 ├── .gitignore
 └── README.md
 ```
@@ -55,14 +94,9 @@ hyundai_website/
 
 - **HTML5** - Semantic markup
 - **CSS3** - Custom properties, Flexbox, Grid, Animations
-- **JavaScript (Vanilla)** - No frameworks or libraries
-- **PHP** - Minimal includes and form handling
+- **JavaScript (Vanilla)** - Shared global utilities + per-page scripts
 
 ## 📋 Setup Instructions
-
-### Prerequisites
-- XAMPP, WAMP, MAMP, or any local PHP server
-- Modern web browser (Chrome, Firefox, Safari, Edge)
 
 ### Installation Steps
 
@@ -71,23 +105,15 @@ hyundai_website/
    cd hyundai_website
    ```
 
-2. **Start your local server**
-   - **XAMPP**: Place the project in `htdocs/` folder and start Apache
-   - **WAMP**: Place the project in `www/` folder and start Apache
-   - **MAMP**: Place the project in `htdocs/` folder and start Apache
-   - **PHP Built-in Server**:
-     ```bash
-     php -S localhost:8000
-     ```
+2. **Serve the static files**
+   - Open `index.html` directly in your browser, or
+   - Use any static server (e.g., `npx serve`, `python -m http.server 8000`)
 
 3. **Access the website**
-   - Open your browser and navigate to:
-     - `http://localhost/hyundai_website/` (XAMPP/WAMP)
-     - `http://localhost:8000/` (PHP built-in server)
+   - Open your browser and navigate to the served URL (default `http://localhost:8000/` when using Python)
 
-4. **Form Submissions**
-   - Form data is stored in `data/submissions.txt`
-   - The `data/` folder will be created automatically on first submission
+4. **Form Interactions**
+   - The contact form performs client-side validation and shows a success message without server submission
 
 ## 📱 Responsive Breakpoints
 
@@ -121,7 +147,7 @@ Edit CSS variables in `css/style.css`:
 
 ### Adding New Car Models
 1. Add SVG file to `assets/images/cars/`
-2. Update `index.php` with new model card
+2. Update `index.html` with new model card
 3. Follow the existing card structure
 
 ### Modifying Animations
@@ -131,11 +157,7 @@ Edit CSS variables in `css/style.css`:
 
 ## 📝 Form Handling
 
-The contact form submits to `php/form_handler.php` which:
-- Validates all required fields
-- Sanitizes user input
-- Stores submissions in `data/submissions.txt`
-- Returns JSON response
+The contact form now validates inputs entirely on the client and displays a confirmation message. No data is sent to a server.
 
 ## 🌐 Browser Support
 
@@ -160,10 +182,6 @@ This project is created for educational purposes.
 ### Images not loading
 - Ensure all asset paths are correct
 - Check file permissions on the server
-
-### Form not submitting
-- Ensure PHP is enabled on your server
-- Check that `data/` folder has write permissions
 
 ### Animations not working
 - Ensure JavaScript is enabled in your browser

@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai India - Page Not Found</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages/error.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="Hyundai Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="models.html" class="nav-link" data-page="models">Models</a></li>
+                <li><a href="ev.html" class="nav-link" data-page="ev">Electric</a></li>
+                <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+                <li><a href="offers.html" class="nav-link" data-page="offers">Offers</a></li>
+                <li><a href="dealers.html" class="nav-link" data-page="dealers">Dealers</a></li>
+                <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero" style="padding: 0;">
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="error-wrapper">
+                    <h1 class="error-code">404</h1>
+                    <p class="error-message">Looks like the page you are trying to reach has driven off. Let us help you get back on track.</p>
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary">Go to Homepage</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
@@ -8,10 +57,17 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#models">Our Models</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#offers">Offers</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="models.html">Our Models</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="dealers.html">Dealers</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">Newsroom</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="about.html">About Hyundai</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -35,15 +91,9 @@
             </svg>
         </button>
     </footer>
-    <?php 
-    // Use BASE_PATH constant if defined, otherwise use empty string
-    if (!defined('BASE_PATH')) {
-        $base_path = '';
-    } else {
-        $base_path = BASE_PATH;
-    }
-    ?>
-    <script src="<?php echo $base_path; ?>js/main.js"></script>
+
+    <script src="js/global.js"></script>
+    <script src="js/pages/privacy.js"></script>
 </body>
 </html>
 

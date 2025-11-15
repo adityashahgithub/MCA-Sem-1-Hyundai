@@ -1,0 +1,109 @@
+/* ============================================
+   HYUNDAI WEBSITE - CONTACT PAGE STYLES
+   ============================================ */
+
+.contact-layout {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: start;
+}
+
+.contact-details {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.contact-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.contact-card p,
+.contact-card a {
+    color: var(--gray);
+}
+
+.contact-card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.contact-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.contact-map {
+    background: linear-gradient(135deg, rgba(13, 79, 139, 0.1) 0%, rgba(0, 165, 255, 0.2) 100%);
+    border-radius: 16px;
+    min-height: 360px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hours-list {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    color: var(--gray);
+}
+
+.support-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.support-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.support-card h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.support-card p {
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+

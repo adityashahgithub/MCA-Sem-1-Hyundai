@@ -140,19 +140,20 @@ Consider creating multiple sizes:
 
 ## 📝 Current Image Mapping
 
-### Homepage (index.php)
-- `car1.svg` → `cars/suv/creta.jpg` (Hyundai Creta)
-- `car2.svg` → `cars/suv/venue.jpg` (Hyundai Venue)
-- `car3.svg` → `cars/hatchback/i20.jpg` (Hyundai i20)
-- `car4.svg` → `cars/sedan/verna.jpg` (Hyundai Verna)
-- `car5.svg` → `cars/suv/tucson.jpg` (Hyundai Tucson)
+### Homepage (index.html)
+- `cars/suv/creta.png` (Hyundai Creta)
+- `cars/suv/venue.png` (Hyundai Venue)
+- `cars/hatchback/i20.png` (Hyundai i20)
+- `cars/sedan/verna.png` (Hyundai Verna)
+- `cars/suv/alcazar.png` (Hyundai Alcazar)
 
-### Models Page (models.php)
+### Models Page (models.html)
 - Additional models:
-  - `cars/sedan/aura.jpg` (Hyundai Aura)
-  - `cars/hatchback/grand-i10-nios.jpg` (Grand i10 Nios)
-  - `cars/electric/kona-electric.jpg` (Kona Electric)
-  - `cars/electric/ioniq-5.jpg` (IONIQ 5)
+  - `cars/car5.svg` (Hyundai Tucson)
+  - `cars/car3.svg` (Hyundai Aura)
+  - `cars/car2.svg` (Hyundai Grand i10 Nios)
+  - `cars/car1.svg` (Hyundai Kona Electric)
+  - `cars/car4.svg` (Hyundai IONIQ 5)
 
 ### Icons
 - `icons/service.svg` → `icons/features/innovation.svg`
@@ -164,7 +165,7 @@ Consider creating multiple sizes:
 1. **Download/Obtain Images**: Get high-quality Hyundai car images
 2. **Optimize Images**: Compress and convert to WebP/JPG
 3. **Organize Files**: Place in appropriate folders following naming convention
-4. **Update Code**: Modify PHP/HTML to use new image paths
+4. **Update Code**: Modify HTML to use new image paths
 5. **Test**: Verify all images load correctly on all devices
 
 ## 📱 Responsive Image Strategy

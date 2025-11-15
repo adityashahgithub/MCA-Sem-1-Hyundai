@@ -1,0 +1,178 @@
+/* ============================================
+   HYUNDAI WEBSITE - ELECTRIC VEHICLES PAGE STYLES
+   ============================================ */
+
+/* Futuristic EV Hero Enhancement */
+.ev-page .page-hero {
+    background: linear-gradient(135deg, rgba(13, 79, 139, 0.95) 0%, rgba(0, 165, 255, 0.85) 50%, rgba(0, 255, 200, 0.75) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.ev-page .page-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 255, 200, 0.3) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+.ev-page .page-hero .page-title {
+    text-shadow: 0 0 20px rgba(0, 255, 200, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 20px rgba(0, 255, 200, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 30px rgba(0, 255, 200, 0.8), 0 0 40px rgba(0, 165, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.ev-overview {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: start;
+}
+
+.ev-overview .surface-card {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.benefits-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.benefits-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.benefits-list li svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.ev-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.ev-stat-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.ev-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.ev-stat-card h4 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.ev-stat-card span {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.charging-timeline {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.timeline-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.timeline-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.timeline-card p {
+    color: var(--gray);
+}
+
+.ev-callout {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.ev-callout figure {
+    background: linear-gradient(135deg, rgba(13, 79, 139, 0.1) 0%, rgba(0, 165, 255, 0.15) 100%);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.ev-callout figure:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.ev-callout figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--transition-slow);
+    border-radius: var(--radius-sm);
+}
+
+.ev-callout figure:hover img {
+    transform: scale(1.05);
+}
+
+.ev-callout .content {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .ev-stat-card h4 {
+        font-size: 1.6rem;
+    }
+}
+

@@ -1,0 +1,102 @@
+/* ============================================
+   HYUNDAI WEBSITE - SERVICES PAGE STYLES
+   ============================================ */
+
+.services-grid {
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.service-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.service-card p {
+    color: var(--gray);
+}
+
+.service-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.service-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray);
+}
+
+.service-card ul li::before {
+    content: '•';
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.maintenance-checklist {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.maintenance-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.maintenance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.maintenance-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.maintenance-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    color: var(--gray);
+}
+
+.service-cta {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.service-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+

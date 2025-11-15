@@ -1,0 +1,125 @@
+/* ============================================
+   HYUNDAI WEBSITE - OFFERS PAGE STYLES
+   ============================================ */
+
+.offers-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.offer-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+    transition: var(--transition);
+    min-height: 280px;
+}
+
+.offer-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+}
+
+.offer-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 79, 139, 0.08) 0%, rgba(0, 165, 255, 0.12) 100%);
+    pointer-events: none;
+}
+
+.offer-card h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    z-index: 1;
+}
+
+.offer-card p {
+    color: var(--gray);
+    z-index: 1;
+}
+
+.offer-highlights {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.offer-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.offer-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    background-color: rgba(0, 165, 255, 0.12);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.finance-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.finance-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.finance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.finance-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.finance-card span {
+    color: var(--gray);
+}
+
+.terms-list {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.terms-list li {
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.terms-list li::before {
+    content: '✓';
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        padding: 1.75rem;
+    }
+}
+

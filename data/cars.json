@@ -1,0 +1,343 @@
+{
+  "cars": [
+    {
+      "id": "creta",
+      "name": "Hyundai Creta",
+      "segment": "suv",
+      "price": "10.99",
+      "price_unit": "Lakh",
+      "power_ps": "115",
+      "mileage": "17.4",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-creta.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-creta.png",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta/exterior/creta-exterior-1.jpg",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta/interior/creta-interior-1.jpg",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/creta/exterior/creta-exterior-2.jpg"
+      ],
+      "variants": ["E", "EX", "S", "SX", "SX(O)"],
+      "features": [
+        "Hyundai Bluelink with 60+ connected features",
+        "Panoramic sunroof with mood lighting",
+        "Bose premium sound system with 8 speakers",
+        "Ventilated front seats for enhanced comfort",
+        "Advanced safety with 6 airbags and ADAS",
+        "10.25-inch touchscreen infotainment system",
+        "Wireless phone charging and USB ports",
+        "Smart electric tailgate with hands-free operation"
+      ],
+      "engine": "1.5 l U2 CRDi Diesel / 1.5 l MPi Petrol",
+      "transmission": "6-Speed Manual & IVT / 6-Speed Automatic",
+      "tagline": "Bold & Powerful"
+    },
+    {
+      "id": "venue",
+      "name": "Hyundai Venue",
+      "segment": "suv",
+      "price": "7.53",
+      "price_unit": "Lakh",
+      "power_ps": "83",
+      "mileage": "17.5",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-venue.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-venue.png",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue/exterior/venue-exterior-1.jpg",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue/interior/venue-interior-1.jpg"
+      ],
+      "variants": ["E", "S", "SX", "SX(O)"],
+      "features": [
+        "Compact SUV with bold design language",
+        "8-inch touchscreen with Apple CarPlay and Android Auto",
+        "Wireless phone charging",
+        "Electric sunroof",
+        "Rear parking camera with guidelines",
+        "ISOFIX child seat anchors",
+        "Dual airbags with ABS and EBD",
+        "Eco-friendly cabin with air purifier"
+      ],
+      "engine": "1.0 l Turbo GDI / 1.2 l Kappa / 1.5 l U2 CRDi",
+      "transmission": "5-Speed Manual / 6-Speed Manual / 7-Speed DCT / AMT",
+      "tagline": "Compact & Smart"
+    },
+    {
+      "id": "tucson",
+      "name": "Hyundai Tucson",
+      "segment": "suv",
+      "price": "27.38",
+      "price_unit": "Lakh",
+      "power_ps": "185",
+      "mileage": "16.4",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-tucson.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-tucson.png",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/tucson/exterior/tucson-exterior-1.jpg"
+      ],
+      "variants": ["GLS", "GLS(O)", "Signature"],
+      "features": [
+        "Premium SUV with sophisticated design",
+        "10.25-inch digital cluster and infotainment",
+        "Panoramic sunroof",
+        "8-way power adjustable driver seat",
+        "Advanced driver assistance systems",
+        "360-degree surround view monitor",
+        "Smart tailgate with hands-free operation",
+        "Premium leather upholstery"
+      ],
+      "engine": "2.0 l MPi Petrol / 2.0 l CRDi Diesel",
+      "transmission": "6-Speed Manual / 6-Speed Automatic",
+      "tagline": "Premium & Luxurious"
+    },
+    {
+      "id": "alcazar",
+      "name": "Hyundai Alcazar",
+      "segment": "suv",
+      "price": "15.99",
+      "price_unit": "Lakh",
+      "power_ps": "115",
+      "mileage": "17.1",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "6/7",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-alcazar.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-alcazar.png"
+      ],
+      "variants": ["Prestige", "Platinum", "Signature"],
+      "features": [
+        "Spacious 6/7 seater configuration",
+        "Captain seats in second row",
+        "10.25-inch touchscreen infotainment",
+        "Panoramic sunroof",
+        "Bose premium sound system",
+        "Ventilated front seats",
+        "Advanced safety with 6 airbags",
+        "Smart electric tailgate"
+      ],
+      "engine": "2.0 l MPi Petrol / 1.5 l U2 CRDi Diesel",
+      "transmission": "6-Speed Manual / 6-Speed Automatic",
+      "tagline": "Spacious & Versatile"
+    },
+    {
+      "id": "exter",
+      "name": "Hyundai Exter",
+      "segment": "suv",
+      "price": "5.99",
+      "price_unit": "Lakh",
+      "power_ps": "83",
+      "mileage": "19.2",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/CNG",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-exter.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-exter.png"
+      ],
+      "variants": ["EX", "S", "SX", "SX(O)"],
+      "features": [
+        "Adventure-ready compact SUV",
+        "8-inch touchscreen infotainment",
+        "Wireless phone charging",
+        "Electric sunroof",
+        "Rear parking camera",
+        "Dual airbags with ABS",
+        "ISOFIX child seat anchors",
+        "Eco-friendly CNG option"
+      ],
+      "engine": "1.2 l Kappa Petrol / CNG",
+      "transmission": "5-Speed Manual / AMT",
+      "tagline": "Adventure Ready"
+    },
+    {
+      "id": "verna",
+      "name": "Hyundai Verna",
+      "segment": "sedan",
+      "price": "9.22",
+      "price_unit": "Lakh",
+      "power_ps": "115",
+      "mileage": "18.6",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-verna.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-verna.png",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/verna/exterior/verna-exterior-1.jpg"
+      ],
+      "variants": ["EX", "S", "SX", "SX(O)"],
+      "features": [
+        "Elegant sedan with dynamic design",
+        "10.25-inch touchscreen with Bluelink",
+        "Panoramic sunroof",
+        "Ventilated front seats",
+        "Bose premium sound system",
+        "Advanced safety with 6 airbags",
+        "Smart electric trunk",
+        "Wireless phone charging"
+      ],
+      "engine": "1.5 l MPi Petrol / 1.5 l U2 CRDi Diesel",
+      "transmission": "6-Speed Manual / CVT / 6-Speed Automatic",
+      "tagline": "Elegant & Dynamic"
+    },
+    {
+      "id": "aura",
+      "name": "Hyundai Aura",
+      "segment": "sedan",
+      "price": "6.09",
+      "price_unit": "Lakh",
+      "power_ps": "83",
+      "mileage": "20.5",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/CNG",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-aura.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-aura.png"
+      ],
+      "variants": ["E", "S", "SX", "SX(O)"],
+      "features": [
+        "Style meets performance",
+        "8-inch touchscreen infotainment",
+        "Wireless phone charging",
+        "Electric sunroof",
+        "Rear parking camera",
+        "Dual airbags with ABS",
+        "Eco-friendly CNG option",
+        "Premium interior finishes"
+      ],
+      "engine": "1.2 l Kappa Petrol / CNG",
+      "transmission": "5-Speed Manual / AMT",
+      "tagline": "Style & Performance"
+    },
+    {
+      "id": "i20",
+      "name": "Hyundai i20",
+      "segment": "hatchback",
+      "price": "7.04",
+      "price_unit": "Lakh",
+      "power_ps": "83",
+      "mileage": "20.35",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/Diesel",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/Highlights/knight/i20knighthome-pc.jpg",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/Highlights/knight/i20knighthome-pc.jpg",
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/exterior/i20-exterior-1.jpg"
+      ],
+      "variants": ["Magna", "Sportz", "Asta", "Asta(O)"],
+      "features": [
+        "Premium hatchback with sporty design",
+        "10.25-inch touchscreen with Bluelink",
+        "Bose premium sound system",
+        "Wireless phone charging",
+        "Electric sunroof",
+        "Ventilated front seats",
+        "Advanced safety with 6 airbags",
+        "Smart electric trunk"
+      ],
+      "engine": "1.2 l Kappa Petrol / 1.5 l U2 CRDi Diesel",
+      "transmission": "5-Speed Manual / CVT / 6-Speed Manual",
+      "tagline": "Premium & Sporty"
+    },
+    {
+      "id": "grand-i10-nios",
+      "name": "Hyundai Grand i10 Nios",
+      "segment": "hatchback",
+      "price": "5.13",
+      "price_unit": "Lakh",
+      "power_ps": "83",
+      "mileage": "20.7",
+      "mileage_unit": "km/l",
+      "fuel_type": "Petrol/CNG",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-grand-i10-nios.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-grand-i10-nios.png"
+      ],
+      "variants": ["Magna", "Sportz", "Asta"],
+      "features": [
+        "Smart and efficient city car",
+        "8-inch touchscreen infotainment",
+        "Wireless phone charging",
+        "Electric sunroof",
+        "Rear parking camera",
+        "Dual airbags with ABS",
+        "Eco-friendly CNG option",
+        "Premium interior design"
+      ],
+      "engine": "1.2 l Kappa Petrol / CNG",
+      "transmission": "5-Speed Manual / AMT",
+      "tagline": "Smart & Efficient"
+    },
+    {
+      "id": "kona-electric",
+      "name": "Hyundai Kona Electric",
+      "segment": "electric",
+      "price": "23.84",
+      "price_unit": "Lakh",
+      "power_ps": "136",
+      "mileage": "452",
+      "mileage_unit": "km",
+      "fuel_type": "Electric",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-kona-electric.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-kona-electric.png"
+      ],
+      "variants": ["Premium", "Premium Dual Tone"],
+      "features": [
+        "Future of mobility with zero emissions",
+        "452 km ARAI certified range",
+        "Fast charging capability",
+        "10.25-inch touchscreen with Bluelink",
+        "Wireless phone charging",
+        "Panoramic sunroof",
+        "Advanced safety with 6 airbags",
+        "Regenerative braking system"
+      ],
+      "engine": "Electric Motor",
+      "transmission": "Single Speed Automatic",
+      "tagline": "Future of Mobility"
+    },
+    {
+      "id": "ioniq5",
+      "name": "Hyundai IONIQ 5",
+      "segment": "electric",
+      "price": "44.95",
+      "price_unit": "Lakh",
+      "power_ps": "217",
+      "mileage": "631",
+      "mileage_unit": "km",
+      "fuel_type": "Electric",
+      "seats": "5",
+      "hero_image": "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-ioniq5.png",
+      "gallery_images": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/home/homemodel-ioniq5.png"
+      ],
+      "variants": ["Premium", "Premium RWD", "Premium AWD"],
+      "features": [
+        "Next generation electric vehicle",
+        "631 km ARAI certified range",
+        "Ultra-fast charging with 800V architecture",
+        "12.3-inch dual screen display",
+        "Augmented reality head-up display",
+        "V2L vehicle-to-load capability",
+        "Advanced driver assistance systems",
+        "Sustainable interior materials"
+      ],
+      "engine": "Electric Motor",
+      "transmission": "Single Speed Automatic",
+      "tagline": "Next Generation EV"
+    }
+  ]
+}
+

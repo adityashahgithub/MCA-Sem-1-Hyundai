@@ -1,0 +1,54 @@
+/* ============================================
+   HYUNDAI WEBSITE - ERROR PAGE STYLES
+   ============================================ */
+
+.error-wrapper {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--white);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.error-message {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 520px;
+}
+
+.error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .error-code {
+        font-size: 4rem;
+    }
+
+    .error-message {
+        font-size: 1.2rem;
+    }
+}
+
